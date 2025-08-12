@@ -1,0 +1,94 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Alban Calvo, a first year Computer Science engineering student. I'm passionnate by cybersecurity. Actually, i'm looking for a training in a foreign country to learn new skills and new corporate cultures.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Net tools",
+        "startDate": "2023",
+        "description": "Python tools to get informations on PfSense firewall. It allows to get informations about network interfaces, firewall rules, and more. It can be used to manage PfSense firewall and to get informations about network configuration.",
+        "images": [
+          "images/portfolio/net-tools/tools.png"
+        ],
+        "url": "https://github.com/AlbanCLV/net_tools",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Packet Capture",
+        "startDate": "2023",
+        "description": "Python tool to capture packets on remote computer. It allows to capture packets and save them in pcap format. It can be used to analyze network traffic or for educational purposes.",
+        "images": [
+          "images/portfolio/packet-capture/packets.png"
+        ],
+        "url": "https://github.com/AlbanCLV/packet_capture",
+        "technologies": [
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Visiativ",
+        "title": "CISO Trainee",
+        "years": "Oct 2024 - present",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+          "Incident Response",
+          "Security Audits",
+          "PingCastle",
+          "Owasp ZAP",
+          "Burp Suite",
+          "Micorsoft Defender",
+          "Microsoft EASM",
+          "Docker",
+          "BloodHound",
+          "Git",
+          "VirtualBox",
+          "Postman"
+        ]
+      },
+      {
+        "company": "Vizyon",
+        "title": "Network & Security Administrator",
+        "years": "Sept 2023 - Jun 2024",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+          "Wireshark",
+          "Cisco Packet Tracer",
+          "Splunk",
+          "Git",
+          "Docker",
+          "GNS3",
+          "PfSense",
+          "OpenVPN",
+          "FreeBSD",
+          "Nagios",
+          "Monitoring",
+          "SSH Tunneling",
+          "Snort",
+          "Nmap",
+          "Tools develoment in Python",
+          "Shell Scripting"
+        ]
+      }
+    ]
+  }
