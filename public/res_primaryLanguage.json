@@ -39,9 +39,20 @@
         "url": "https://github.com/AlbanCLV/packet_capture",
         "technologies": [
         ]
+      },
+      {
+        "title": "Trading Bot",
+        "startDate": "2025",
+        "description": "Python tool to trade cryptocurrencies on various exchanges. It allows to automate trading strategies and to analyze market trends.",
+        "images": [
+          "images/portfolio/trading-bot/bot.jpg"
+        ],
+        "url": "https://github.com/AlbanCLV/Bot_Trading",
+        "technologies": [
+        ]
       }
     ],
-    "experience": [
+  "experience": [
       {
         "company": "Visiativ",
         "title": "CISO Trainee",
@@ -88,6 +99,39 @@
           "Nmap",
           "Tools develoment in Python",
           "Shell Scripting"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "CESI Engineering School - Lyon",
+        "degree": "Master's in Computer Science Engineering",
+        "years": "2024 - present",
+        "details": [
+          "Specialization in cybersecurity",
+          "Projects in software and network development",
+          "Collaborative work in Agile mode"
+        ]
+      },
+      {
+        "school": "University Institute of Technology - Grenoble",
+        "degree": "Bachelor's in Network and Telecommunications",
+        "years": "2021 - 2024",
+        "details": [
+          "Network administration",
+          "Infrastructure and Servers management",
+          "Python, Java development",
+          "Final project: implementation of a secure network"
+        ]
+      },
+{
+        "school": "Private High School Saint-Vincent - Collonges-sous-Salève",
+        "degree": "Professional Baccalaureate in Computer Networks and Communication Systems",
+        "years": "2018 - 2021",
+        "details": [
+          "Network administration",
+          "Infrastructure and Servers management",
+          "Python development"
         ]
       }
     ]

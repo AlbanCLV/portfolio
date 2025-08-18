@@ -6,7 +6,8 @@
       "about": "À propos de moi",
       "projects": "Projets",
       "skills": "Compétences",
-      "experience": "Expérience"
+      "experience": "Expérience",
+      "education": "Éducation"
     }
   },
   "projects": [
@@ -37,18 +38,25 @@
         "images/portfolio/packet-capture/packets.png"
       ],
       "url": "https://github.com/AlbanCLV/packet_capture",
-      "technologies": [
-      ]
+      "technologies": []
+    },
+    {
+      "title": "Trading Bot",
+      "startDate": "2025",
+      "description": "Outil Python pour trader des cryptomonnaies sur diverses plateformes d'échange. Il permet d'automatiser des stratégies de trading et d'analyser les tendances du marché.",
+      "images": [
+        "images/portfolio/trading-bot/bot.jpg"
+      ],
+      "url": "https://github.com/AlbanCLV/Bot_Trading",
+      "technologies": []
     }
   ],
   "experience": [
     {
       "company": "Visiativ",
       "title": "Stagiaire RSSI",
-      "years": "Octobre 2024 - présent",
-      "mainTech": [
-        ""
-      ],
+  "years": "Octobre 2024 -",
+      "mainTech": [""],
       "technologies": [
         "Réponse aux incidents",
         "Audits de sécurité",
@@ -68,9 +76,7 @@
       "company": "Vizyon",
       "title": "Administrateur Réseau & Sécurité",
       "years": "Septembre 2023 - Juin 2024",
-      "mainTech": [
-        ""
-      ],
+      "mainTech": [""],
       "technologies": [
         "Wireshark",
         "Cisco Packet Tracer",
@@ -88,6 +94,39 @@
         "Nmap",
         "Développement d’outils en Python",
         "Scripts Shell"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "CESI École d’Ingénieurs - Lyon",
+      "degree": "Cycle Ingénieur en Informatique",
+      "years": "2024 - présent",
+      "details": [
+        "Spécialisation en cybersécurité",
+        "Projets en développement logiciel et réseaux",
+        "Travail collaboratif en mode Agile"
+      ]
+    },
+    {
+      "school": "IUT de Grenoble",
+      "degree": "BUT Réseaux et Télécommunications",
+      "years": "2021 - 2024",
+      "details": [
+        "Administration réseaux",
+        "Gestion des infrastructures et serveurs",
+        "Développement Python, Java",
+        "Projet final : mise en place d’un réseau sécurisé"
+      ]
+    },
+    {
+      "school": "Lycée Privé Saint-Vincent - Collonges-sous-Salève",
+      "degree": "Baccalauréat Professionnel Systèmes Numériques, option RISC",
+      "years": "2018 - 2021",
+      "details": [
+        "Administration réseaux",
+        "Gestion des infrastructures et serveurs",
+        "Développement Python"
       ]
     }
   ]

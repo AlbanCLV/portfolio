@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import $ from "jquery";
 import "./App.scss";
 import Header from "./components/Header";
+import Education from "./components/Education";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -132,6 +133,10 @@ class App extends Component {
         <Experience
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+        <Education
+          education={this.state.resumeData.education}
+          basic_info={this.state.resumeData.basic_info}
         />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
