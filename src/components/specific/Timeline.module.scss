@@ -1,0 +1,124 @@
+/* src/components/specific/Timeline.module.scss */
+.timelineWrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timelineList {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+.timelineItem {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #181818;
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.timelineItem.left,
+.timelineItem.right {
+  align-self: flex-start;
+  .content {
+    flex-direction: row;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+.content {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: justify;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 32px;
+  margin-left: 0;
+  flex-shrink: 0;
+}
+.timelineItem.right .logo {
+  margin-right: 0;
+  margin-left: 1.5rem;
+}
+.textBlock {
+  flex: 1;
+  text-align: justify;
+}
+
+.year {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #7abaff;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.school {
+  font-style: italic;
+  color: #999;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #bdbdbd;
+}
+
+.schoolAnimation {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(200%); // Décalé sur la droite
+  opacity: 0; // Caché par défaut
+
+  @media (max-width: 992px) {
+    display: none; // Cache l'animation sur les petits écrans
+  }
+}
+
+.companyLink {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+  &:hover {
+    color: #155ab6;
+  }
+}
