@@ -1,0 +1,10 @@
+import Link from 'next/link';
+
+// ...dans la page qui liste les projets...
+<Link href="/projects/1" style={{ textDecoration: 'none' }}>
+  <div style={macWindowStyle}>
+    {/* Contenu de la carte projet */}
+    <h2>SI - Sécurité et administration</h2>
+    <p>Projet de sécurisation d’un SI après attaque...</p>
+  </div>
+</Link>

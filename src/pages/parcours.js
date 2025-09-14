@@ -25,7 +25,7 @@ const formationsData = [
     logo: "svp.png",
     school: "Lycée Saint-Vincent de Paul",
     title: "Baccalauréat professionnel, Réseaux Informatiques et Systèmes Communicants",
-    year: "2018 - 2021",
+    year: "Sep 2018 - Jun 2021",
     description: ""
   }
 ];
@@ -37,18 +37,20 @@ const experiencesData = [
     logo: "visiativ.png",
     school: "Visiativ",
     title: "CISO Trainee",
-    year: "2024 - Présent",
+    year: "Oct 2024 - Présent",
     description: "Participation aux audits de sécurité, scans de vulnérabilité, sensibilisation des équipes, et suivi de la sécurité des produits web.",
-    link: "https://www.visiativ.com/"
+    link: "https://www.visiativ.com/",
+    rapport: "/assets/MT_CALVO.pdf"
   },
   {
     id: 2,
     logo: "vizyon.png",
     school: "Vizyon",
     title: "Administrateur Réseaux & Sécurité",
-    year: "2023 - 2024",
+    year: "Sep 2023 - Jun 2024",
     description: "Gestion des réseaux pour cabinets médicaux, mise en place de VPN, firewalls, SIEM, et développement d’outils Python pour l’administration.",
-    link: "https://www.linkedin.com/company/vizyon-france/?originalSubdomain=fr"
+    link: "https://www.linkedin.com/company/vizyon-france/?originalSubdomain=fr",
+    rapport: "/assets/Rapport_Vizyon.pdf"
   }
 ];
 
@@ -117,6 +119,23 @@ function AnimatedTimeline({ formations }) {
               <div className={styles.year}>{formation.year}</div>
               {formation.description && (
                 <div className={styles.description}>{formation.description}</div>
+              )}
+              {formation.rapport && (
+                <div style={{ marginTop: 12 }}>
+                  <a
+                    href={formation.rapport}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "#7abaff",
+                      textDecoration: "underline",
+                      fontWeight: 600,
+                      fontSize: "1.08rem"
+                    }}
+                  >
+                    Voir le rapport
+                  </a>
+                </div>
               )}
             </div>
           </motion.li>

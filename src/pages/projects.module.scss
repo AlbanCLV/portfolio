@@ -2,6 +2,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 16px;
+  color: #f3f6fa; // Texte principal plus clair
+  background: #121212;
 }
 
 .title {
@@ -9,6 +11,7 @@
   font-weight: 700;
   margin-bottom: 40px;
   text-align: center;
+  color: #fff; // Titre très lisible
 }
 
 .catalogue {
@@ -23,12 +26,12 @@
   border-radius: 16px;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   width: 340px;
-  min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 28px 22px 22px 22px;
-  transition: box-shadow 0.2s, transform 0.2s, width 0.3s, min-height 0.3s;
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: #eaf2fb; // Texte dans la carte plus clair
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -64,14 +67,26 @@
   align-items: flex-start;
 }
 
+.projectContent h2 {
+  color: #fff; // Titre projet dans la carte
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.projectContent p {
+  color: #c6d4e5; // Description projet dans la carte
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
 .projectLink {
   margin-top: 12px;
-  color: #1a73e8;
+  color: #7abaff;
   font-weight: 600;
   text-decoration: underline;
   transition: color 0.2s;
   &:hover {
-    color: #155ab6;
+    color: #1a73e8;
   }
 }
 
