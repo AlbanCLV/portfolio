@@ -6,10 +6,3 @@ module.exports = {
   basePath: isProd ? '/portfolio' : '',
   assetPrefix: isProd ? '/portfolio/' : '',
 };
-
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d out"
-}
