@@ -1,0 +1,18 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
+  "/contact": "pages/contact.html",
+  "/cv": "pages/cv.html",
+  "/experiences": "pages/experiences.html",
+  "/formations": "pages/formations.html",
+  "/": "pages/index.html",
+  "/parcours": "pages/parcours.html",
+  "/projects": "pages/projects.html",
+  "/projects/1": "pages/projects/1.html",
+  "/projects/2": "pages/projects/2.html",
+  "/projects/3": "pages/projects/3.html",
+  "/projects/4": "pages/projects/4.html",
+  "/404": "pages/404.html"
+}

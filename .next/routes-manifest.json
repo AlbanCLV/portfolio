@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "/portfolio",
+  "redirects": [
+    {
+      "source": "/portfolio/",
+      "destination": "/portfolio",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/portfolio/$"
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/portfolio//_next/:path+",
+        "destination": "/portfolio/_next/:path+",
+        "regex": "^/portfolio//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/cv",
+      "regex": "^/cv(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cv(?:/)?$"
+    },
+    {
+      "page": "/experiences",
+      "regex": "^/experiences(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/experiences(?:/)?$"
+    },
+    {
+      "page": "/formations",
+      "regex": "^/formations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/formations(?:/)?$"
+    },
+    {
+      "page": "/parcours",
+      "regex": "^/parcours(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/parcours(?:/)?$"
+    },
+    {
+      "page": "/projects",
+      "regex": "^/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects(?:/)?$"
+    },
+    {
+      "page": "/projects/1",
+      "regex": "^/projects/1(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects/1(?:/)?$"
+    },
+    {
+      "page": "/projects/2",
+      "regex": "^/projects/2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects/2(?:/)?$"
+    },
+    {
+      "page": "/projects/3",
+      "regex": "^/projects/3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects/3(?:/)?$"
+    },
+    {
+      "page": "/projects/4",
+      "regex": "^/projects/4(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects/4(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
