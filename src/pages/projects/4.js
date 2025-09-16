@@ -213,7 +213,7 @@ export default function Project4() {
             <h2 style={sectionTitleStyle}>Ressources</h2>
             <div style={{display: "flex", flexDirection: "column", gap: 12}}>
               <a
-                href="/assets/Rapport_DWA.pdf"
+                href={require('../../utils/assetPath').default('/assets/Rapport_DWA.pdf')}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

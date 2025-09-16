@@ -188,7 +188,7 @@ export default function Project3() {
             <h2 style={{marginTop: 0, marginLeft: 0, marginBottom: 18, fontSize: "1.35rem", color: "#7abaff", letterSpacing: "0.5px"}}>Ressources</h2>
             <div style={{display: "flex", flexDirection: "column", gap: 12}}>
               <a
-                href="/assets/Rapport_RO.ipynb"
+                href={require('../../utils/assetPath').default('/assets/Rapport_RO.ipynb')}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

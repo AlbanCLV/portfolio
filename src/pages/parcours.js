@@ -40,7 +40,7 @@ const experiencesData = [
     year: "Oct 2024 - Présent",
     description: "Participation aux audits de sécurité, scans de vulnérabilité, sensibilisation des équipes, et suivi de la sécurité des produits web.",
     link: "https://www.visiativ.com/",
-    rapport: "/assets/MT_CALVO.pdf"
+  rapport: require('../utils/assetPath').default('/assets/MT_CALVO.pdf')
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const experiencesData = [
     year: "Sep 2023 - Jun 2024",
     description: "Gestion des réseaux pour cabinets médicaux, mise en place de VPN, firewalls, SIEM, et développement d’outils Python pour l’administration.",
     link: "https://www.linkedin.com/company/vizyon-france/?originalSubdomain=fr",
-    rapport: "/assets/Rapport_Vizyon.pdf"
+  rapport: require('../utils/assetPath').default('/assets/Rapport_Vizyon.pdf')
   }
 ];
 
@@ -89,7 +89,7 @@ function AnimatedTimeline({ formations }) {
             }}
           >
             <img
-              src={`/assets/images/${formation.logo}`}
+              src={require('../utils/assetPath').default(`/assets/images/${formation.logo}`)}
               alt={formation.school}
               className={styles.logo}
               style={{

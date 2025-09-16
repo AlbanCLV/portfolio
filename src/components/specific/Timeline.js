@@ -15,7 +15,7 @@ export default function Timeline({ formations }) {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <img
-              src={`/assets/images/${formation.logo}`}
+              src={require('../../utils/assetPath').default(`/assets/images/${formation.logo}`)}
               alt={formation.school}
               className={styles.logo}
             />

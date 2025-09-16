@@ -1,6 +1,7 @@
 // src/components/specific/Hero.js
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Hero.module.scss';
+import assetPath from '../../utils/assetPath';
 
 // Icônes externes
 import { FaNetworkWired, FaPhone, FaPeopleGroup } from "react-icons/fa6";
@@ -104,12 +105,12 @@ const Hero = () => {
       <div className={styles.heroContent} style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '48px' }}>
         <div className={styles.photoCell}>
           <img
-            src="/assets/images/alban-calvo-profile.jpg"
+            src={assetPath('/assets/images/alban-calvo-profile.jpg')}
             alt="Alban Calvo"
             className={styles.profileImage}
           />
           <a
-            href="/Resume_AlbanCalvo.pdf"
+            href={assetPath('/Resume_AlbanCalvo.pdf')}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.cvDownload}
