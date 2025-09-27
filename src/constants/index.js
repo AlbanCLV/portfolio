@@ -14,9 +14,9 @@ export const EXTERNAL_LINKS = {
 };
 
 export const META = {
-  SITE_NAME: 'Alban Calvo - Portfolio',
-  DESCRIPTION: 'Portfolio of Alban CALVO, Computer Engineering Student',
-  KEYWORDS: 'Cybersecutity, Programming, Networks, Systems',
+  SITE_NAME: 'Alban Calvo - CISO Junior',
+  DESCRIPTION: 'Portfolio of Alban CALVO, CISO Junior & Engineering Student',
+  KEYWORDS: 'Cybersecurity, Information Security, CISO, Network Security, Risk Management',
   AUTHOR: 'Alban Calvo',
   URL: 'https://albancalvo.dev',
 };
