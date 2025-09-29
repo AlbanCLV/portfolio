@@ -48,7 +48,7 @@ const About = () => {
                 I strive to secure infrastuctures and implement effective security measures
                 that meet organizational needs.
               </p>
-              <Button href="/about" variant="outline">
+              <Button href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/about`} variant="outline">
                 Learn more
               </Button>
             </Card>

@@ -48,10 +48,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Button href="#parcours" variant="primary" size="large">
+            <Button href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}#parcours`} variant="primary" size="large">
               View my journey
             </Button>
-            <Button href="#projects" variant="outline" size="large">
+            <Button href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}#projects`} variant="outline" size="large">
               My projects
             </Button>
           </motion.div>

@@ -77,7 +77,7 @@ const ParcoursSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <Button href="/parcours" variant="outline" size="large">
+          <Button href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/parcours`} variant="outline" size="large">
             View my complete career
           </Button>
         </motion.div>
