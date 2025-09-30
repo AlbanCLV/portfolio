@@ -81,6 +81,14 @@
       resize: vertical;
       min-height: 120px;
     }
+
+    // Styles pour les erreurs de validation Formspree
+    .error {
+      color: #ef4444;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
   }
 
   &__submit {

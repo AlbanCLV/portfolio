@@ -5,7 +5,12 @@
   "description": "Portfolio professionnel d'Alban Calvo - Développeur React",
   "homepage": "https://AlbanCLV.github.io/portfolio",
   "author": "Alban Calvo",
-  "keywords": ["portfolio", "react", "développeur", "frontend"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "développeur",
+    "frontend"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,15 +20,16 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
+    "framer-motion": "^10.16.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^1.3.0",
+    "react-intersection-observer": "^9.4.3",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "sass": "^1.62.0",
-    "framer-motion": "^10.16.0",
-    "react-intersection-observer": "^9.4.3",
-    "react-helmet-async": "^1.3.0",
-    "prop-types": "^15.8.1"
+    "sass": "^1.62.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

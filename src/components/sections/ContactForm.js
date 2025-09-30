@@ -1,71 +1,30 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
 import Button from '../ui/Button';
 import Card from '../ui/Card';
 import './ContactForm.scss';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [state, handleSubmit] = useForm("mnngdbrj");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Ici vous pourriez intégrer avec un service comme Formspree, Netlify Forms, etc.
-      console.log('Form data:', formData);
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  return (
-    <Card className="contact-form">
-      <h3>Send me a message</h3>
-      
-      {submitStatus === 'success' && (
+  if (state.succeeded) {
+    return (
+      <Card className="contact-form">
         <motion.div
           className="contact-form__message contact-form__message--success"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Message sent successfully! I will reply to you soon.
+          <h3>Thank you!</h3>
+          <p>Your message has been sent successfully! I will reply to you soon.</p>
         </motion.div>
-      )}
+      </Card>
+    );
+  }
 
-      {submitStatus === 'error' && (
-        <motion.div
-          className="contact-form__message contact-form__message--error"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          An error occurred. Please try again.
-        </motion.div>
-      )}
+  return (
+    <Card className="contact-form">
+      <h3>Send me a message</h3>
 
       <form onSubmit={handleSubmit} className="contact-form__form">
         <div className="contact-form__row">
@@ -75,10 +34,13 @@ const ContactForm = () => {
               type="text"
               id="name"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
               required
-              disabled={isSubmitting}
+              disabled={state.submitting}
+            />
+            <ValidationError 
+              prefix="Name" 
+              field="name"
+              errors={state.errors}
             />
           </div>
           <div className="contact-form__field">
@@ -87,10 +49,13 @@ const ContactForm = () => {
               type="email"
               id="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
               required
-              disabled={isSubmitting}
+              disabled={state.submitting}
+            />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
             />
           </div>
         </div>
@@ -101,10 +66,13 @@ const ContactForm = () => {
             type="text"
             id="subject"
             name="subject"
-            value={formData.subject}
-            onChange={handleChange}
             required
-            disabled={isSubmitting}
+            disabled={state.submitting}
+          />
+          <ValidationError 
+            prefix="Subject" 
+            field="subject"
+            errors={state.errors}
           />
         </div>
 
@@ -114,21 +82,24 @@ const ContactForm = () => {
             id="message"
             name="message"
             rows="5"
-            value={formData.message}
-            onChange={handleChange}
             required
-            disabled={isSubmitting}
+            disabled={state.submitting}
           ></textarea>
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
         </div>
 
         <Button
           type="submit"
           variant="primary"
           size="large"
-          disabled={isSubmitting}
+          disabled={state.submitting}
           className="contact-form__submit"
         >
-          {isSubmitting ? 'Sending...' : 'Send message'}
+          {state.submitting ? 'Sending...' : 'Send message'}
         </Button>
       </form>
     </Card>
