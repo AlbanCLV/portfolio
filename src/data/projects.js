@@ -5,7 +5,6 @@ export const projectsData = [
     description: "A modern social network platform built with React and Node.js, featuring user authentication and real-time posts made by users.",
     technologies: ["React", "Node.js", "MongoDB", "CI/CD"],
     image: `${process.env.PUBLIC_URL}/assets/images/project-1.jpg`,
-    demoUrl: "https://demo-social-network.com",
     githubUrl: `${process.env.PUBLIC_URL}/assets/documents/project-1-report.pdf`,
     featured: true
   },
@@ -28,7 +27,7 @@ export const projectsData = [
     image: `${process.env.PUBLIC_URL}/assets/images/project-3.jpg`,
     githubUrl: "https://github.com/AlbanCLV/EasySave",
     reportUrl: `${process.env.PUBLIC_URL}/assets/documents/project-3-report.pdf`,
-    featured: false
+    featured: true
   },
   {
     id: 4,
@@ -37,6 +36,24 @@ export const projectsData = [
     technologies: ["Active Directory", "Risk Management", "Security Policies", "Firewalls", "PowerShell"],
     image: `${process.env.PUBLIC_URL}/assets/images/project-4.jpg`,
     reportUrl: `${process.env.PUBLIC_URL}/assets/documents/project-4-report.pdf`,
+    featured: true
+  },
+  {
+    id: 5,
+    title: "Web Development for Small Business - Personal Project",
+    description: "A comprehensive study on web development tailored for small businesses, focusing on cost-effective solutions and user-friendly design.",
+    technologies: ["React", "Vite", "JavaScript", "CSS"],
+    image: `${process.env.PUBLIC_URL}/assets/images/project-5.jpg`,
+    demoUrl: "https://albanclv.github.io/cybersecurity",
+    featured: false
+  },
+  {
+    id: 6,
+    title: "Trading Bot - Personal Project",
+    description: "A trading bot that automates buying and selling on cryptocurrency exchanges, utilizing technical analysis and machine learning.",
+    technologies: ["Python", "Pandas", "NumPy", "TA-Lib"],
+    image: `${process.env.PUBLIC_URL}/assets/images/project-6.jpg`,
+    githubUrl: "https://github.com/AlbanCLV/Bot_Trading/tree/feature/alban",
     featured: false
   }
 ];
@@ -89,6 +106,22 @@ export const experienceData = [
     period: "2023 - 2024",
     description: "Administration and security of network infrastructure, monitoring security incidents, and maintaining firewall configurations and network security protocols.",
     technologies: ["Network Security", "Firewalls", "Monitoring", "Network Administration"]
+  },
+  {
+    id: 3,
+    company: "Microstore",
+    position: "PC preparation Trainee",
+    period: "2022 - 2023",
+    description: "Preparation and configuration of PC and servers for Capgemini.",
+    technologies: ["Hardware", "Operating Systems", "Client Support", "System Configuration"]
+  },
+  {
+    id: 4,
+    company: "Bouvet Cartier Immobilier",
+    position: "Real estate agent assistant",
+    period: "2020 - 2022",
+    description: "Assisting real estate agents in various tasks, including client communication, visits organization.",
+    technologies: ["Client Communication", "Property Management", "Administrative Tasks"]
   }
 ];
 
