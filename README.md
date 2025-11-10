@@ -88,7 +88,7 @@ npm run deploy
 
 ## 📞 Contact
 
-- **Email** : contact@albancalvo.dev
+- **Email** : albancalvo@gmail.com
 - **LinkedIn** : [linkedin.com/in/alban-calvo](https://linkedin.com/in/alban-calvo)
 - **GitHub** : [github.com/AlbanCLV](https://github.com/AlbanCLV)
 
