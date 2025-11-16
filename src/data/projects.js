@@ -57,14 +57,14 @@ export const projectsData = [
     featured: false
   },
   {
-    id: 5,
+    id: 7,
     title: "Big Data - Medical Data Lakehouse Design",
     description: "Design and implementation of a complete Data Lakehouse for medical data analysis. This project covers the entire decision-making chain: data ingestion (CSV, PostgreSQL), cleaning, transformation, storage optimization (partitioning, bucketing, Parquet Snappy), and performance benchmarking. Comparison of two architectures: Talend + Hadoop vs Spark + MinIO.",
     technologies: ["Spark", "MinIO", "PostgreSQL", "Python", "Jupyter", "Docker", "Parquet"],
-    image: `${process.env.PUBLIC_URL}/assets/images/project-5.jpg`,
+    image: `${process.env.PUBLIC_URL}/assets/images/project-7.jpg`,
     demoUrl: null,
-    githubUrl: "https://github.com/AlbanCLV/BigData-Medical-Lakehouse",
-    reportUrl: `${process.env.PUBLIC_URL}/assets/documents/project-5-report.pdf`,
+    githubUrl: "https://github.com/AlbanCLV/BigData",
+    reportUrl: `${process.env.PUBLIC_URL}/assets/documents/project-7-report.pdf`,
     featured: true
   }
 ];
